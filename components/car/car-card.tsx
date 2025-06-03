@@ -45,7 +45,7 @@ export function CarCard({ car }: CarCardProps) {
         <Link href={`/vehicles/${car.id}`}>
           <div className="mb-2">
             <h3 className="text-lg font-bold">{car.make} {car.model}</h3>
-            <p className="text-xl font-semibold text-primary mt-1">
+            <p className="text-xl font-semibold text-primary mt-1" suppressHydrationWarning>
               {formatCurrency(car.price)}
             </p>
           </div>
